@@ -1,0 +1,457 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.LogicTests\\TweakBank.LogicTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\amysa\\source\\repos\\TweakBank\\Models\\TweakBank.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\amysa\\source\\repos\\TweakBank\\Models\\TweakBank.Models.csproj",
+        "projectName": "TweakBank.Models",
+        "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\Models\\TweakBank.Models.csproj",
+        "packagesPath": "C:\\Users\\amysa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\Models\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\amysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Data\\TweakBank.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Data\\TweakBank.Data.csproj",
+        "projectName": "TweakBank.Data",
+        "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Data\\TweakBank.Data.csproj",
+        "packagesPath": "C:\\Users\\amysa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\amysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\amysa\\source\\repos\\TweakBank\\Models\\TweakBank.Models.csproj": {
+                "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\Models\\TweakBank.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Dto\\TweakBank.Dto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Dto\\TweakBank.Dto.csproj",
+        "projectName": "TweakBank.Dto",
+        "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Dto\\TweakBank.Dto.csproj",
+        "packagesPath": "C:\\Users\\amysa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Dto\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\amysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.GenericRepository\\TweakBank.GenericRepository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.GenericRepository\\TweakBank.GenericRepository.csproj",
+        "projectName": "TweakBank.GenericRepository",
+        "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.GenericRepository\\TweakBank.GenericRepository.csproj",
+        "packagesPath": "C:\\Users\\amysa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.GenericRepository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\amysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Data\\TweakBank.Data.csproj": {
+                "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Data\\TweakBank.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.LogicTests\\TweakBank.LogicTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.LogicTests\\TweakBank.LogicTests.csproj",
+        "projectName": "TweakBank.LogicTests",
+        "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.LogicTests\\TweakBank.LogicTests.csproj",
+        "packagesPath": "C:\\Users\\amysa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.LogicTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\amysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Logic\\TweakBank.Logic.csproj": {
+                "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Logic\\TweakBank.Logic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[2.2.10, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[2.2.10, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.2, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.4, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Logic\\TweakBank.Logic.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Logic\\TweakBank.Logic.csproj",
+        "projectName": "TweakBank.Logic",
+        "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Logic\\TweakBank.Logic.csproj",
+        "packagesPath": "C:\\Users\\amysa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Logic\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\amysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Dto\\TweakBank.Dto.csproj": {
+                "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Dto\\TweakBank.Dto.csproj"
+              },
+              "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Repository\\TweakBank.Repository.csproj": {
+                "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Repository\\TweakBank.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Repository\\TweakBank.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Repository\\TweakBank.Repository.csproj",
+        "projectName": "TweakBank.Repository",
+        "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Repository\\TweakBank.Repository.csproj",
+        "packagesPath": "C:\\Users\\amysa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\amysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\amysa\\source\\repos\\TweakBank\\Models\\TweakBank.Models.csproj": {
+                "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\Models\\TweakBank.Models.csproj"
+              },
+              "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.GenericRepository\\TweakBank.GenericRepository.csproj": {
+                "projectPath": "C:\\Users\\amysa\\source\\repos\\TweakBank\\TweakBank.GenericRepository\\TweakBank.GenericRepository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

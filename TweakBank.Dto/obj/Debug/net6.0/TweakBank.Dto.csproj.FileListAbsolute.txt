@@ -1,0 +1,12 @@
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Dto\bin\Debug\net6.0\TweakBank.Dto.deps.json
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Dto\bin\Debug\net6.0\TweakBank.Dto.dll
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Dto\bin\Debug\net6.0\TweakBank.Dto.pdb
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Dto\obj\Debug\net6.0\TweakBank.Dto.csproj.AssemblyReference.cache
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Dto\obj\Debug\net6.0\TweakBank.Dto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Dto\obj\Debug\net6.0\TweakBank.Dto.AssemblyInfoInputs.cache
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Dto\obj\Debug\net6.0\TweakBank.Dto.AssemblyInfo.cs
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Dto\obj\Debug\net6.0\TweakBank.Dto.csproj.CoreCompileInputs.cache
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Dto\obj\Debug\net6.0\TweakBank.Dto.dll
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Dto\obj\Debug\net6.0\refint\TweakBank.Dto.dll
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Dto\obj\Debug\net6.0\TweakBank.Dto.pdb
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Dto\obj\Debug\net6.0\ref\TweakBank.Dto.dll

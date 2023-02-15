@@ -1,0 +1,5 @@
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Logic.Test\obj\Debug\net6.0\TweakBank.Logic.Test.csproj.AssemblyReference.cache
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Logic.Test\obj\Debug\net6.0\TweakBank.Logic.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Logic.Test\obj\Debug\net6.0\TweakBank.Logic.Test.AssemblyInfoInputs.cache
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Logic.Test\obj\Debug\net6.0\TweakBank.Logic.Test.AssemblyInfo.cs
+C:\Users\amysa\source\repos\TweakBank\TweakBank.Logic.Test\obj\Debug\net6.0\TweakBank.Logic.Test.csproj.CoreCompileInputs.cache

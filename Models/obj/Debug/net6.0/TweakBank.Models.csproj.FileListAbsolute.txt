@@ -1,0 +1,12 @@
+C:\Users\amysa\source\repos\TweakBank\Models\bin\Debug\net6.0\TweakBank.Models.deps.json
+C:\Users\amysa\source\repos\TweakBank\Models\bin\Debug\net6.0\TweakBank.Models.dll
+C:\Users\amysa\source\repos\TweakBank\Models\bin\Debug\net6.0\TweakBank.Models.pdb
+C:\Users\amysa\source\repos\TweakBank\Models\obj\Debug\net6.0\TweakBank.Models.csproj.AssemblyReference.cache
+C:\Users\amysa\source\repos\TweakBank\Models\obj\Debug\net6.0\TweakBank.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amysa\source\repos\TweakBank\Models\obj\Debug\net6.0\TweakBank.Models.AssemblyInfoInputs.cache
+C:\Users\amysa\source\repos\TweakBank\Models\obj\Debug\net6.0\TweakBank.Models.AssemblyInfo.cs
+C:\Users\amysa\source\repos\TweakBank\Models\obj\Debug\net6.0\TweakBank.Models.csproj.CoreCompileInputs.cache
+C:\Users\amysa\source\repos\TweakBank\Models\obj\Debug\net6.0\TweakBank.Models.dll
+C:\Users\amysa\source\repos\TweakBank\Models\obj\Debug\net6.0\refint\TweakBank.Models.dll
+C:\Users\amysa\source\repos\TweakBank\Models\obj\Debug\net6.0\TweakBank.Models.pdb
+C:\Users\amysa\source\repos\TweakBank\Models\obj\Debug\net6.0\ref\TweakBank.Models.dll
