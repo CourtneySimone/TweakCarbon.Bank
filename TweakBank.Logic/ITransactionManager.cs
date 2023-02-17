@@ -4,11 +4,11 @@ namespace TweakBank.Logic
 {
     public interface ITransactionManager
     {
-        void TransferFunds(TransferDto transferDto);
+        (int recipientAccount, int? senderAccount) TransferFunds(TransferDto transferDto);
         void LogTransaction(int type, int? transactingAccountId = null, int? transactingCustomerId = null,
-                                    int? staffId = null, int? recipientAccountId = null, int? recipientCustomerId = null,
+                                     int? recipientAccountId = null, int? recipientCustomerId = null,
                                     string? reference = null, double? amount = null);
 
-        void LogTransfer(int transactingAccountId, int recipientAccountId, double transferAmount);
+        void LogTransfer(int transactingAccountId, double transferAmount, int? recipientAccountId = null);
     }
 }

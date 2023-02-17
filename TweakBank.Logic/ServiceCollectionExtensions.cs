@@ -13,7 +13,7 @@ namespace TweakBank.Logic
         public static void AddTransactionManager(this IServiceCollection services)
         {
             services.AddScoped<ITransactionRepository, TransactionRepository>();
-            services.AddScoped<IAccountRepository, AccountRepository>();
+            services.AddScoped<IBankAccountRepository, BankAccountRepository>();
         }
     }
 }

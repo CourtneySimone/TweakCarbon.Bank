@@ -9,13 +9,29 @@ namespace TweakBank.Api.Maps
         public UserProfile()
         {
             MapAccount();
+            MapCustomer();
+        }
+
+        public void MapCustomer()
+        {
+
+            CreateMap<CreateCustomerDto, Customer>()
+                    .ForMember(dest =>
+                        dest.CustomerId,
+                        opt => opt.Ignore());
+
+            CreateMap<Customer, CreateCustomerDto>()
+               .ForMember(dest =>
+                   dest.BankAccount,
+                   opt => opt.Ignore());
+
         }
 
         public void MapAccount()
         {
-            CreateMap<CreateAccountDto, Account>()
+            CreateMap<CreateBankForExistingCustomerAccountDto, BankAccount>()
                 .ForMember(dest =>
-                    dest.AccountId,
+                    dest.BankAccountId,
                     opt => opt.Ignore())
                 .ForMember(dest =>
                     dest.Balance,

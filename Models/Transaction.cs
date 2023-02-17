@@ -21,22 +21,19 @@ namespace TweakBank.Models
         public int? RecipientCustomerId { get; set; }
         public virtual Customer? RecipientCustomer { get; set; }
 
-        [ForeignKey("RecipientAccount")]
-        public int? RecipientAccountId { get; set; }
-        public virtual Account? RecipientAccount { get; set; }
+        [ForeignKey("RecipientBankAccount")]
+        public int? RecipientBankAccountId { get; set; }
+        public virtual BankAccount? RecipientBankAccount { get; set; }
 
-        [ForeignKey("TransactingAccount")]
-        public int? TransactingAccountId { get; set; }
-        public virtual Account? TransactingAccount { get; set; }
+        [ForeignKey("TransactingBankAccount")]
+        public int? TransactingBankAccountId { get; set; }
+        public virtual BankAccount? TransactingBankAccount { get; set; }
 
         [Required]
         [ForeignKey("TransactionType")]
         public int TransactionTypeId { get; set; }
         public virtual TransactionType TransactionType { get; set; }
 
-        [ForeignKey("StaffMember")]
-        public int? StaffId { get; set; }
-        public virtual Staff? StaffMember { get; set; }
 
     }
 }

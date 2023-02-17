@@ -9,10 +9,9 @@ namespace TweakBank.Data
         {
         
         }
-        public DbSet<Account> Accounts { get; set; }
+        public DbSet<BankAccount> BankAccounts { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
-        public DbSet<Staff> Staff { get; set; }
         public DbSet<TransactionType> TransactionTypes { get; set; }
  
 

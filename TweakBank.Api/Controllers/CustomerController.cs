@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Data;
 using TweakBank.Api.DTO;
 using TweakBank.Logic;
 using TweakBank.Models;
@@ -13,19 +15,17 @@ namespace TweakBank.Api.Controllers
     public class CustomerController : ControllerBase
     {
 
-        private readonly ILogger<CustomerController> _logger;
         ICustomerRepository _customerRepository;
         private readonly IMapper _mapper;
         private readonly ITransactionManager _transactionManager;
         private readonly ITransactionRepository _transactionRepository;
-        private readonly IAccountRepository _accountRepository;
+        private readonly IBankAccountRepository _accountRepository;
 
 
-        public CustomerController(ILogger<CustomerController> logger, ICustomerRepository customerRepository,
+        public CustomerController(ICustomerRepository customerRepository,
             IMapper mapper, ITransactionManager transactionManager, ITransactionRepository transactionRepository,
-            IAccountRepository accountRepository)
+            IBankAccountRepository accountRepository)
         {
-            _logger = logger;
             _customerRepository = customerRepository;
             _mapper = mapper;
             _transactionManager = transactionManager;
@@ -35,43 +35,85 @@ namespace TweakBank.Api.Controllers
 
         [Route("/AllCustomers")]
         [HttpGet]
-        public IEnumerable<Customer> GetCustomers()
+        public ObjectResult GetCustomers()
         {
-            return _customerRepository.GetAllData();
+            try
+            {
+                var allAccounts = _customerRepository.GetAllData();
+                return new OkObjectResult(allAccounts);
+            }
+            catch (Exception ex)
+            {
+                return Problem(
+              title: "Bad Input - customers not found",
+              detail: ex.Message
+              );
+
+            }
         }
 
 
         [Route("/CreateCustomer")]
         [HttpPost]
-        public void CreateCustomer(CreateCustomerDto customerDto)
+        public ObjectResult CreateCustomer(CreateCustomerDto customerDto)
         {
-
-            var customer = _mapper.Map<Customer>(customerDto);
-
-            _customerRepository.InsertRecord(customer);
-            var newCustomerId = _customerRepository.GetCustomerId(customerDto.IdNumber);
-
-            var account = new Account()
+            try
             {
-                AccountType = customerDto.account.AccountType,
-                Balance = customerDto.account.InitialDeposit,
-                CustomerId = newCustomerId
-            };
-            _accountRepository.InsertRecord(account);
+                var customer = _mapper.Map<Customer>(customerDto);
 
-            _transactionManager.LogTransaction((int)Dto.DTO.TransactionType.CreateCustomer,
-                transactingCustomerId: newCustomerId, amount: customerDto.account.InitialDeposit);
+                if(customer.IdNumber == null || customer.IdNumber ==0)
+                {
+                    throw new ArgumentNullException("Please insert an Id number"); 
+                }
+
+                _customerRepository.InsertRecord(customer);
+                var newCustomerId = _customerRepository.GetCustomerId(customerDto.IdNumber);
+
+                var account = new BankAccount()
+                {
+                    AccountType = customerDto.BankAccount.AccountType,
+                    Balance = customerDto.BankAccount.InitialDeposit,
+                    CustomerId = newCustomerId
+                };
+                _accountRepository.InsertRecord(account);
+
+                _transactionManager.LogTransaction((int)Dto.DTO.TransactionType.CreateCustomer,
+                    transactingCustomerId: newCustomerId, amount: customerDto.BankAccount.InitialDeposit);
+                return new OkObjectResult(customer);
+
+            }
+            catch (Exception ex)
+            {
+                return Problem(
+              title: "Bad Input - customers not found",
+              detail: ex.Message
+              );
+
+            }
+
         }
 
         [Route("/GetTransactions")]
         [HttpPost]
-        public IEnumerable<Transaction> GetTransactions(int customerId)
+        public ObjectResult GetTransactions(int customerId)
         {
-            var all = _transactionRepository.GetAllData();
+            try
+            {
+                if(customerId == null|| customerId==0)
+                {
+                    throw new ArgumentNullException("customer ID cannot be null or 0 ");
+                }
+               var transactions = _transactionRepository.GetAllTransactionsForCustomer(customerId);
+                return new ObjectResult(transactions);
+            }
+            catch (Exception ex)
+            {
+                return Problem(
+              title: "Bad Input - customers not found",
+              detail: ex.Message
+              );
 
-            var x = _transactionRepository.GetAllTransactionsForCustomer(customerId);
-
-            return x;
+            }
         }
 
 

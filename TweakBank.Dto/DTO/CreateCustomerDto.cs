@@ -1,8 +1,10 @@
-﻿namespace TweakBank.Api.DTO
+﻿using System.ComponentModel.DataAnnotations;
+using TweakBank.Dto.DTO;
+
+namespace TweakBank.Api.DTO
 {
     public class CreateCustomerDto
     {
-        public int? CustomerId { get; set; }
         public string? FirstName { get; set; }
         public string? Surname { get; set; }
         public string? FullName { get; set; }
@@ -13,6 +15,6 @@
         public string? Country { get; set; }
         public string? Phone { get; set; }
         public int IdNumber { get; set; }
-        public CreateAccountDto account { get; set; }
+        public CreateBankForNewCustomerAccountDto BankAccount { get; set; }
     }
 }
