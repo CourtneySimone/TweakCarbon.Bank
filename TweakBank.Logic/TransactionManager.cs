@@ -20,9 +20,9 @@ namespace TweakBank.Logic
             var senderAccount = _accountRepo.FindById(transferDto.SenderBankAccountId);
             var recipientAccount = _accountRepo.FindById(transferDto.RecipientBankAccountId);
 
-            if(senderAccount == null)
+            if(senderAccount == null || senderAccount.Balance<transferDto.TransferAmount)
             {
-                throw (new Exception("sender account cannot be found"));
+                throw (new Exception("sender account cannot be found or has an insufficient balance"));
             }
 
             senderAccount.Balance = senderAccount.Balance - transferDto.TransferAmount;

@@ -14,7 +14,7 @@ namespace TweakBank.Api.DTO
         public string? PostalCode { get; set; }
         public string? Country { get; set; }
         public string? Phone { get; set; }
-        public int IdNumber { get; set; }
+        public long IdNumber { get; set; }
         public CreateBankForNewCustomerAccountDto BankAccount { get; set; }
     }
 }

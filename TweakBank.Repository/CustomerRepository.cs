@@ -5,7 +5,7 @@ namespace TweakBank.Repository
 {
     public class CustomerRepository : GenericRepository<Customer>, ICustomerRepository
     {
-      public int GetCustomerId(int customerIdNumber)
+      public int GetCustomerId(long customerIdNumber)
         {
             return base.dbEntity.Where(x => x.IdNumber == customerIdNumber).First().CustomerId;
 

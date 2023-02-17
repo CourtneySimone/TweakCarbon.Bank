@@ -41,6 +41,19 @@
             context.TransactionTypes.Add(transactiontype10);
             context.SaveChanges();
 
+
+            var customer1 = new Customer() { FirstName = "Arisha Barron" };
+            var customer2 = new Customer() { FirstName = "Branden Gibson" };
+            var customer3 = new Customer() { FirstName = "Rhonda Church" };
+            var customer4 = new Customer() { FirstName = "Georgina Hazel" };
+
+            context.Customers.Add(customer1);
+            context.Customers.Add(customer2);
+            context.Customers.Add(customer3);
+            context.Customers.Add(customer4);
+
+            context.SaveChanges();
+
             //  This method will be called after migrating to the latest version.
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method

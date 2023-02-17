@@ -5,6 +5,6 @@ namespace TweakBank.Repository
 {
     public interface ICustomerRepository : IGenericRepository<Customer>
     {
-        int GetCustomerId(int customerIdNumber);
+        int GetCustomerId(long customerIdNumber);
     }
 }
